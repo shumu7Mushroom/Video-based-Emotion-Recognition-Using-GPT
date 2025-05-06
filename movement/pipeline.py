@@ -15,7 +15,7 @@ extraction_dir = os.path.abspath(os.path.join(current_dir, "../Keyframe-Extracti
 sys.path.append(extraction_dir)
 # print("模块搜索路径：", extraction_dir)
 from Keyframe_extraction import scen_keyframe_extraction
-# from save_keyframe import save_frames_by_index_memory_cached
+
 
 # ---------- 参数配置 ----------
 # video_path = os.path.join(current_dir, "test.mp4")
@@ -95,26 +95,7 @@ def run_keyframe_extraction():
         folder_path=keyframe_img_folder,
         frames_list_path="lmske_intermediate/frames_list.pkl"
     )
-    # if os.path.exists(keyframe_img_folder) and os.listdir(keyframe_img_folder):
-    #     print("✅ Step 4: 提取完成，关键帧保存在:", keyframe_img_folder)
-    # else:
-    #     print("⚠️ Step 4：没有保存任何关键帧，请检查提取逻辑或保存路径。")
-    
 
-# def save_keyframes_from_pkl(keyframe_pkl, frames_list_pkl, video_path, output_folder):
-#     with open(keyframe_pkl, "rb") as f:
-#         keyframe_indices = pickle.load(f)
-#     print(f"🔢 加载关键帧编号，共 {len(keyframe_indices)} 张")
-#     print("✔️ 关键帧索引示例：", keyframe_indices[:5])
-
-#     save_frames_by_index_memory_cached(
-#         keyframe_indexes=keyframe_indices,
-#         video_path=video_path,
-#         folder_path=output_folder,
-#         frames_list_path=frames_list_pkl
-#     )
-
-# ---------- 执行流程 ----------
 if __name__ == "__main__":
     if not os.path.exists(video_path):
         print(f"❌ 未找到视频：{video_path}")
@@ -123,9 +104,3 @@ if __name__ == "__main__":
     detect_scenes()
     extract_clip_features()
     run_keyframe_extraction()
-    # save_keyframes_from_pkl(
-    #     keyframe_pkl=keyframe_pkl_path,
-    #     frames_list_pkl=frames_list_path,
-    #     video_path=video_path,
-    #     output_folder=keyframe_img_folder
-    # )
