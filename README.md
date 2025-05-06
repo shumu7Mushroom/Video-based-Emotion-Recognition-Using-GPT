@@ -35,6 +35,15 @@ _Step 2:_ Run save.py to save the keyframes
 _Step 3:_ Run Callgpt.py to call gpt to get emotion
 
 
+# Acknowlegement
+
+I refer the codes of following project
+
+[CLIP](https://github.com/openai/CLIP)
+
+[TransnetV2](https://github.com/soCzech/TransNetV2)
+
+[keyframe-extraction-for-video-summarization](https://github.com/ttharden/Keyframe-Extraction-for-video-summarization)
 
 # Reference
 Tomas Soucek and Jakub Lokoc, “Transnet V2: an effective deep network architecture for fast shot transition detection,” arXiv:2008.04838, pp. 1–4, 2020.
