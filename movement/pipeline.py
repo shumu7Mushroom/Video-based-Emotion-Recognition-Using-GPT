@@ -8,6 +8,7 @@ from tqdm import tqdm
 from PIL import Image
 import clip
 from transnetv2 import TransNetV2
+import argparse
 
 # ✅ 导入关键帧提取函数
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -16,11 +17,15 @@ sys.path.append(extraction_dir)
 # print("模块搜索路径：", extraction_dir)
 from Keyframe_extraction import scen_keyframe_extraction
 
-
 # ---------- 参数配置 ----------
-# video_path = os.path.join(current_dir, "test.mp4")
-video_path = os.path.abspath(os.path.join(current_dir, "../movement/fixed_test.mp4"))
+parser = argparse.ArgumentParser(description="关键帧提取处理管道")
+parser.add_argument("video", nargs="?", default="../movement/fixed_test.mp4", help="视频文件路径（可选）")
+args = parser.parse_args()
+
+# 解析视频路径
+video_path = os.path.abspath(os.path.join(current_dir, args.video))
 print("🎯 正在使用视频路径：", video_path)
+
 output_dir = os.path.join(current_dir, "lmske_intermediate")
 scenes_path = os.path.join(output_dir, "scene_list.txt")
 features_npy_path = os.path.join(output_dir, "features.npy")
