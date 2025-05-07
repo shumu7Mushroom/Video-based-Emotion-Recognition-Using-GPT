@@ -29,11 +29,23 @@ By the way, if you havn't download ffmpeg in your computer, you can [download](h
 
 _Step 1:_ Run pipeline.py to get the keyframe sequence
 
+···bash
+python pipeline.py your_vedio_name
+```
 
 _Step 2:_ Run save.py to save the keyframes
 
+···bash
+python save.py your_vedio_name
+```
+
 _Step 3:_ Run Callgpt.py to call gpt to get emotion
 
+Prompt are chageable, you can send anything you like. You need your own api_key and put it into the codes.
+
+···bash
+python Callgpt.py
+```
 
 # Acknowlegement
 
@@ -50,13 +62,6 @@ Tomas Soucek and Jakub Lokoc, “Transnet V2: an effective deep network architec
 
 Yang, An and Pan, Junshu and Lin, Junyang and Men, Rui and Zhang, Yichang and Zhou, Jingren and Zhou, Chang, "Chinese CLIP: Contrastive Vision-Language Pretraining in Chinese" arXiv preprint arXiv:2211.01335,2022
 
-Sandra Eliza Fontes de Avila, Ana Paula Brandao Lopes, Antonio da Luz Jr., and Arnaldo de Albuquerque Araujo, “VSUMM: A mechanism designed to produce static video summaries and a novel evaluation method,” Pattern Recognit. Lett., vol. 32, no. 1, pp. 56–68, 2011.
-
-Hana Gharbi, Sahbi Bahroun, Mohamed Massaoudi, and Ezzeddine Zagrouba, “Key frames extraction using graph modularity clustering for efficient video summarization,” in ICASSP, 2017, pp. 1502–1506.
-
-H.M. Nandini, H.K. Chethan, and B.S. Rashmi, “Shot based keyframe extraction using edge-lbp approach,” Journal of King Saud University - Computer and Information Sciences, vol. 34, no. 7, pp. 4537–4545, 2022.
-
-Luis Carlos Garcia-Peraza, Sebastien Ourselin, and Tom Vercauteren, VideoSum: A Python Library for Surgical Video Summarization, pp. 1–2, 2023.
 
 
 
