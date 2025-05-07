@@ -28,13 +28,11 @@ By the way, if you havn't download ffmpeg in your computer, you can [download](h
 # Use it 
 
 _Step 1:_ Run pipeline.py to get the keyframe sequence
-
 ···bash
 python pipeline.py your_vedio_name
 ```
 
 _Step 2:_ Run save.py to save the keyframes
-
 ···bash
 python save.py your_vedio_name
 ```
@@ -42,7 +40,6 @@ python save.py your_vedio_name
 _Step 3:_ Run Callgpt.py to call gpt to get emotion
 
 Prompt are chageable, you can send anything you like. You need your own api_key and put it into the codes.
-
 ···bash
 python Callgpt.py
 ```
