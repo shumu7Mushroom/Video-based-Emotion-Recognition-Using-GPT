@@ -29,6 +29,7 @@ By the way, if you havn't download ffmpeg in your computer, you can [download](h
 
 _Step 1:_ Run pipeline.py to get the keyframe sequence
 ```bash
+cd movement
 python pipeline.py your_vedio_name
 ```
 
