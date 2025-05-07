@@ -60,6 +60,8 @@ Tomas Soucek and Jakub Lokoc, “Transnet V2: an effective deep network architec
 
 Yang, An and Pan, Junshu and Lin, Junyang and Men, Rui and Zhang, Yichang and Zhou, Jingren and Zhou, Chang, "Chinese CLIP: Contrastive Vision-Language Pretraining in Chinese" arXiv preprint arXiv:2211.01335,2022
 
+Tan, Kailong and Zhou, Yuxiang and Xia, Qianchen and Liu, Rui and Chen, Yong, “Large Model based Sequential Keyframe Extraction for Video Summarization,” arXiv preprint arXiv:2401.04962, pp. 1–11, 2024.
+
 
 
 
