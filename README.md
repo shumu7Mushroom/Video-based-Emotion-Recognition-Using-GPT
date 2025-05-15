@@ -55,6 +55,8 @@ I refer the codes of following project
 
 [keyframe-extraction-for-video-summarization](https://github.com/ttharden/Keyframe-Extraction-for-video-summarization)
 
+The help from ZXL(?)
+
 # Reference
 Tomas Soucek and Jakub Lokoc, “Transnet V2: an effective deep network architecture for fast shot transition detection,” arXiv:2008.04838, pp. 1–4, 2020.
 
